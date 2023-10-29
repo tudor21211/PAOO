@@ -27,6 +27,8 @@ Telefon::Telefon(Telefon &t) {
 
 Telefon::Telefon(Telefon &&t) {
 
+    //cele 3 linii sunt doar pentru exemplificarea zonei spre care pointeaza
+    //un obiect care e creat prin move
     this->name = t.name;
     this->color = t.color;
     this->size = t.size;
