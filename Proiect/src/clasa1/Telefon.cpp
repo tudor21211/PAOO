@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include<iostream>
+#include <unordered_set>
 #include "Telefon.hpp"
 
 using namespace std;
@@ -55,4 +56,28 @@ void Telefon::setColor(const char *newColor){
     color = new char[strlen(newColor)+1];
     strcpy(this->color,newColor);
 
+}
+
+const char* Telefon::compareSize(const Telefon& otherPhone) {
+    if (size > otherPhone.size) {
+        return "Telefonul curent este mai mare in dimensiune decat telefonul dat";
+    } else if (size < otherPhone.size) {
+        return "Telefonul curent este mai mic in dimensiune decat telefonul dat.";
+    } else {
+        return "Telefonul curent are aceeasi dimensiune ca si telefonul dat.";
+    }
+}
+
+void Telefon::analyzePhones(Telefon *phones, int numPhones) {
+    float totalSize = 0.0;
+    std::unordered_set<std::string> uniqueColors;
+
+    for (int i = 0; i < numPhones; ++i) {
+        totalSize += phones[i].size;
+        uniqueColors.insert(phones[i].color);
+    }
+
+    float averageSize = totalSize / numPhones;
+
+    std::cout << "The average size of the given phones is: " << averageSize << " and the number of unique colors is: " << uniqueColors.size() << "\n";
 }
