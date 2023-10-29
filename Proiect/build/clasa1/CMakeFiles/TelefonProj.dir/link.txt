@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/TelefonProj.dir/Telefon.cpp.o -o ../TelefonProj 

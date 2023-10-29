@@ -1,8 +1,5 @@
 #include<iostream>
 #include "Telefon.hpp"
-//Pisica a (Pisica("Miau"))
-//Pisica a (std::move(Pisica("Miau")))
-
 
 
 int main() {
@@ -30,8 +27,6 @@ std::cout<<"t3 color after setting t1 to blue:"<<t3.getColor()<<"\n";
 
 std::cout<<"t1 color address is "<<static_cast<const void*>(t1.getColor())<<"\n"<<"t2 color address is "<<static_cast<const void*>(t2.getColor())<<"\n"<<"t3 color address is "<<static_cast<const void*>(t3.getColor())<<"\n"; 
 
-//copy constructorul copiaza atributele intr-un nou obiect si le pune in memorie la o zona diferita
-//move constructorul pointeaza catre atributele altui obiect la aceeasi zona de memorie
 
 return 0;
 }

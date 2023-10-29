@@ -1,0 +1,7 @@
+/home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles/main_executable.dir
+/home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles/edit_cache.dir
+/home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles/rebuild_cache.dir
+/home/tudor21/Desktop/git/PAOO/Proiect/build/clasa1/CMakeFiles/Telefon.dir
+/home/tudor21/Desktop/git/PAOO/Proiect/build/clasa1/CMakeFiles/TelefonProj.dir
+/home/tudor21/Desktop/git/PAOO/Proiect/build/clasa1/CMakeFiles/edit_cache.dir
+/home/tudor21/Desktop/git/PAOO/Proiect/build/clasa1/CMakeFiles/rebuild_cache.dir
