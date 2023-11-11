@@ -81,3 +81,10 @@ void Telefon::analyzePhones(Telefon *phones, int numPhones) {
 
     std::cout << "The average size of the given phones is: " << averageSize << " and the number of unique colors is: " << uniqueColors.size() << "\n";
 }
+
+
+
+Telefon Telefon::operator= (Telefon a){
+    std::cout<< "override = operator\n";
+    return *this;
+}

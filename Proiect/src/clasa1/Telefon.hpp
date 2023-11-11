@@ -19,5 +19,6 @@ class Telefon {
         void setColor(const char *newColor);
         const char* compareSize(const Telefon& otherPhone);
         static void analyzePhones(Telefon *phones, int numPhones);
+        Telefon operator=(Telefon a);
 
 };
