@@ -237,6 +237,15 @@ MyProject_IS_TOP_LEVEL:STATIC=ON
 MyProject_SOURCE_DIR:STATIC=/home/tudor21/Desktop/git/PAOO/Proiect/src
 
 //Value Computed by CMake
+Project_BINARY_DIR:STATIC=/home/tudor21/Desktop/git/PAOO/Proiect/build
+
+//Value Computed by CMake
+Project_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Project_SOURCE_DIR:STATIC=/home/tudor21/Desktop/git/PAOO/Proiect/src
+
+//Value Computed by CMake
 Telefon_BINARY_DIR:STATIC=/home/tudor21/Desktop/git/PAOO/Proiect/build/clasa1
 
 //Value Computed by CMake

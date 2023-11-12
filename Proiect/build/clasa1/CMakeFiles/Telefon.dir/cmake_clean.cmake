@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Telefon.dir/Device.cpp.o"
+  "CMakeFiles/Telefon.dir/Device.cpp.o.d"
   "CMakeFiles/Telefon.dir/Telefon.cpp.o"
   "CMakeFiles/Telefon.dir/Telefon.cpp.o.d"
   "libTelefon.a"

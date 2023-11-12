@@ -7,17 +7,20 @@
 
 using namespace std;
 
-Telefon::Telefon (const char *name,const char *color, float size) {
+Telefon::Telefon (const char *name,const char *color, float size) 
+    : Device(name, color, size){
+
     this->name = new char[strlen(name)+1];
     strcpy(this->name,name);
     this->color = new char[strlen(color)+1];
     strcpy(this->color,color);
     this->size = size;
     cout<<"Implemented class constructor \n";
+    
 }
 
 
-Telefon::Telefon(Telefon &t) {
+Telefon::Telefon(Telefon &t) : Device(t){
     this->name = new char[strlen(t.name)+1];
     strcpy(this->name,t.name);
     this->color = new char[strlen(t.color)+1];
@@ -26,7 +29,8 @@ Telefon::Telefon(Telefon &t) {
     cout<<"Implemented copy constructor \n";
 }
 
-Telefon::Telefon(Telefon &&t) {
+Telefon::Telefon(Telefon &&t)
+:Device(std::move(t)) {
 
     //cele 3 linii sunt doar pentru exemplificarea zonei spre care pointeaza
     //un obiect care e creat prin move
@@ -42,21 +46,11 @@ Telefon::~Telefon (){
     cout<<"Destructor called \n";
 }
 
-char* Telefon::getColor () {
-    return this->color;
+void Telefon::displayInfo() const {
+    std::cout << "Telefon Information: ";
+    std::cout << "Name: " << returnName() << ", Color: " << getColor() << ", Size: " << getSize() << std::endl;
 }
 
-float Telefon::getSize () {
-    return this->size;
-}
-
-void Telefon::setColor(const char *newColor){
-    delete[] color;
-
-    color = new char[strlen(newColor)+1];
-    strcpy(this->color,newColor);
-
-}
 
 const char* Telefon::compareSize(const Telefon& otherPhone) {
     if (size > otherPhone.size) {
@@ -84,7 +78,3 @@ void Telefon::analyzePhones(Telefon *phones, int numPhones) {
 
 
 
-Telefon Telefon::operator= (Telefon a){
-    std::cout<< "override = operator\n";
-    return *this;
-}

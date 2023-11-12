@@ -83,17 +83,33 @@ clasa1/CMakeFiles/Telefon.dir/Telefon.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Telefon.dir/Telefon.cpp.s"
 	cd /home/tudor21/Desktop/git/PAOO/Proiect/build/clasa1 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tudor21/Desktop/git/PAOO/Proiect/src/clasa1/Telefon.cpp -o CMakeFiles/Telefon.dir/Telefon.cpp.s
 
+clasa1/CMakeFiles/Telefon.dir/Device.cpp.o: clasa1/CMakeFiles/Telefon.dir/flags.make
+clasa1/CMakeFiles/Telefon.dir/Device.cpp.o: /home/tudor21/Desktop/git/PAOO/Proiect/src/clasa1/Device.cpp
+clasa1/CMakeFiles/Telefon.dir/Device.cpp.o: clasa1/CMakeFiles/Telefon.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object clasa1/CMakeFiles/Telefon.dir/Device.cpp.o"
+	cd /home/tudor21/Desktop/git/PAOO/Proiect/build/clasa1 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT clasa1/CMakeFiles/Telefon.dir/Device.cpp.o -MF CMakeFiles/Telefon.dir/Device.cpp.o.d -o CMakeFiles/Telefon.dir/Device.cpp.o -c /home/tudor21/Desktop/git/PAOO/Proiect/src/clasa1/Device.cpp
+
+clasa1/CMakeFiles/Telefon.dir/Device.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Telefon.dir/Device.cpp.i"
+	cd /home/tudor21/Desktop/git/PAOO/Proiect/build/clasa1 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tudor21/Desktop/git/PAOO/Proiect/src/clasa1/Device.cpp > CMakeFiles/Telefon.dir/Device.cpp.i
+
+clasa1/CMakeFiles/Telefon.dir/Device.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Telefon.dir/Device.cpp.s"
+	cd /home/tudor21/Desktop/git/PAOO/Proiect/build/clasa1 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tudor21/Desktop/git/PAOO/Proiect/src/clasa1/Device.cpp -o CMakeFiles/Telefon.dir/Device.cpp.s
+
 # Object files for target Telefon
 Telefon_OBJECTS = \
-"CMakeFiles/Telefon.dir/Telefon.cpp.o"
+"CMakeFiles/Telefon.dir/Telefon.cpp.o" \
+"CMakeFiles/Telefon.dir/Device.cpp.o"
 
 # External object files for target Telefon
 Telefon_EXTERNAL_OBJECTS =
 
 clasa1/libTelefon.a: clasa1/CMakeFiles/Telefon.dir/Telefon.cpp.o
+clasa1/libTelefon.a: clasa1/CMakeFiles/Telefon.dir/Device.cpp.o
 clasa1/libTelefon.a: clasa1/CMakeFiles/Telefon.dir/build.make
 clasa1/libTelefon.a: clasa1/CMakeFiles/Telefon.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libTelefon.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libTelefon.a"
 	cd /home/tudor21/Desktop/git/PAOO/Proiect/build/clasa1 && $(CMAKE_COMMAND) -P CMakeFiles/Telefon.dir/cmake_clean_target.cmake
 	cd /home/tudor21/Desktop/git/PAOO/Proiect/build/clasa1 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Telefon.dir/link.txt --verbose=$(VERBOSE)
 

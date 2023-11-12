@@ -130,6 +130,30 @@ Telefon/fast:
 	cd /home/tudor21/Desktop/git/PAOO/Proiect/build && $(MAKE) $(MAKESILENT) -f clasa1/CMakeFiles/Telefon.dir/build.make clasa1/CMakeFiles/Telefon.dir/build
 .PHONY : Telefon/fast
 
+Device.o: Device.cpp.o
+.PHONY : Device.o
+
+# target to build an object file
+Device.cpp.o:
+	cd /home/tudor21/Desktop/git/PAOO/Proiect/build && $(MAKE) $(MAKESILENT) -f clasa1/CMakeFiles/Telefon.dir/build.make clasa1/CMakeFiles/Telefon.dir/Device.cpp.o
+.PHONY : Device.cpp.o
+
+Device.i: Device.cpp.i
+.PHONY : Device.i
+
+# target to preprocess a source file
+Device.cpp.i:
+	cd /home/tudor21/Desktop/git/PAOO/Proiect/build && $(MAKE) $(MAKESILENT) -f clasa1/CMakeFiles/Telefon.dir/build.make clasa1/CMakeFiles/Telefon.dir/Device.cpp.i
+.PHONY : Device.cpp.i
+
+Device.s: Device.cpp.s
+.PHONY : Device.s
+
+# target to generate assembly for a file
+Device.cpp.s:
+	cd /home/tudor21/Desktop/git/PAOO/Proiect/build && $(MAKE) $(MAKESILENT) -f clasa1/CMakeFiles/Telefon.dir/build.make clasa1/CMakeFiles/Telefon.dir/Device.cpp.s
+.PHONY : Device.cpp.s
+
 Telefon.o: Telefon.cpp.o
 .PHONY : Telefon.o
 
@@ -163,6 +187,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Telefon"
+	@echo "... Device.o"
+	@echo "... Device.i"
+	@echo "... Device.s"
 	@echo "... Telefon.o"
 	@echo "... Telefon.i"
 	@echo "... Telefon.s"

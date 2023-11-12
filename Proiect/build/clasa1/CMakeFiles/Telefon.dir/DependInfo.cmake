@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/tudor21/Desktop/git/PAOO/Proiect/src/clasa1/Device.cpp" "clasa1/CMakeFiles/Telefon.dir/Device.cpp.o" "gcc" "clasa1/CMakeFiles/Telefon.dir/Device.cpp.o.d"
   "/home/tudor21/Desktop/git/PAOO/Proiect/src/clasa1/Telefon.cpp" "clasa1/CMakeFiles/Telefon.dir/Telefon.cpp.o" "gcc" "clasa1/CMakeFiles/Telefon.dir/Telefon.cpp.o.d"
   )
 
