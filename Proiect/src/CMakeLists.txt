@@ -6,8 +6,9 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 
-add_subdirectory(clasa1) 
+add_subdirectory(libs) 
 
 add_executable(main_executable main.cpp)
-target_link_libraries(main_executable Telefon) 
+target_link_libraries(main_executable device tablet smartphone androidDevice) 
+
 
