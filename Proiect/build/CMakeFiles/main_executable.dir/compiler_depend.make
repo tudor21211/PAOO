@@ -181,11 +181,12 @@ CMakeFiles/main_executable.dir/main.cpp.o: /home/tudor21/Desktop/git/PAOO/Proiec
   /usr/include/c++/13/bits/ostream.tcc \
   /usr/include/c++/13/istream \
   /usr/include/c++/13/bits/istream.tcc \
-  /home/tudor21/Desktop/git/PAOO/Proiect/src/clasa1/Telefon.hpp \
-  /home/tudor21/Desktop/git/PAOO/Proiect/src/clasa1/Device.hpp \
-  /home/tudor21/Desktop/git/PAOO/Proiect/src/clasa1/DeviceInterface.hpp \
-  /home/tudor21/Desktop/git/PAOO/Proiect/src/clasa1/Device.hpp
+  /home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Device/Device.hpp \
+  /home/tudor21/Desktop/git/PAOO/Proiect/src/libs/AndroidDevice/AndroidDevice.hpp \
+  /home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Smartphone/Smartphone.hpp
 
+
+/home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Device/Device.hpp:
 
 /usr/include/c++/13/istream:
 
@@ -237,8 +238,6 @@ CMakeFiles/main_executable.dir/main.cpp.o: /home/tudor21/Desktop/git/PAOO/Proiec
 
 /usr/include/c++/13/bits/stl_iterator_base_types.h:
 
-/home/tudor21/Desktop/git/PAOO/Proiect/src/clasa1/Device.hpp:
-
 /usr/include/c++/13/debug/assertions.h:
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
@@ -262,6 +261,8 @@ CMakeFiles/main_executable.dir/main.cpp.o: /home/tudor21/Desktop/git/PAOO/Proiec
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
+
+/home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Smartphone/Smartphone.hpp:
 
 /usr/include/string.h:
 
@@ -421,8 +422,6 @@ CMakeFiles/main_executable.dir/main.cpp.o: /home/tudor21/Desktop/git/PAOO/Proiec
 
 /usr/include/c++/13/ostream:
 
-/home/tudor21/Desktop/git/PAOO/Proiect/src/clasa1/DeviceInterface.hpp:
-
 /usr/include/c++/13/ios:
 
 /usr/include/c++/13/bits/stl_iterator.h:
@@ -457,8 +456,6 @@ CMakeFiles/main_executable.dir/main.cpp.o: /home/tudor21/Desktop/git/PAOO/Proiec
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
-/home/tudor21/Desktop/git/PAOO/Proiect/src/clasa1/Telefon.hpp:
-
 /usr/include/c++/13/cerrno:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
@@ -478,6 +475,8 @@ CMakeFiles/main_executable.dir/main.cpp.o: /home/tudor21/Desktop/git/PAOO/Proiec
 /usr/include/c++/13/bits/istream.tcc:
 
 /usr/include/c++/13/bits/exception_ptr.h:
+
+/home/tudor21/Desktop/git/PAOO/Proiect/src/libs/AndroidDevice/AndroidDevice.hpp:
 
 /usr/include/c++/13/bits/cxxabi_init_exception.h:
 
