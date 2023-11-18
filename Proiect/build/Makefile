@@ -130,17 +130,43 @@ main_executable/fast:
 .PHONY : main_executable/fast
 
 #=============================================================================
-# Target rules for targets named Telefon
+# Target rules for targets named androidDevice
 
 # Build rule for target.
-Telefon: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Telefon
-.PHONY : Telefon
+androidDevice: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 androidDevice
+.PHONY : androidDevice
 
 # fast build rule for target.
-Telefon/fast:
-	$(MAKE) $(MAKESILENT) -f clasa1/CMakeFiles/Telefon.dir/build.make clasa1/CMakeFiles/Telefon.dir/build
-.PHONY : Telefon/fast
+androidDevice/fast:
+	$(MAKE) $(MAKESILENT) -f libs/AndroidDevice/CMakeFiles/androidDevice.dir/build.make libs/AndroidDevice/CMakeFiles/androidDevice.dir/build
+.PHONY : androidDevice/fast
+
+#=============================================================================
+# Target rules for targets named tablet
+
+# Build rule for target.
+tablet: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tablet
+.PHONY : tablet
+
+# fast build rule for target.
+tablet/fast:
+	$(MAKE) $(MAKESILENT) -f libs/Tablet/CMakeFiles/tablet.dir/build.make libs/Tablet/CMakeFiles/tablet.dir/build
+.PHONY : tablet/fast
+
+#=============================================================================
+# Target rules for targets named smartphone
+
+# Build rule for target.
+smartphone: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 smartphone
+.PHONY : smartphone
+
+# fast build rule for target.
+smartphone/fast:
+	$(MAKE) $(MAKESILENT) -f libs/Smartphone/CMakeFiles/smartphone.dir/build.make libs/Smartphone/CMakeFiles/smartphone.dir/build
+.PHONY : smartphone/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -174,8 +200,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Telefon"
+	@echo "... androidDevice"
 	@echo "... main_executable"
+	@echo "... smartphone"
+	@echo "... tablet"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

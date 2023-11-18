@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtablet.a CMakeFiles/tablet.dir/Tablet.cpp.o
+/usr/bin/ranlib libtablet.a

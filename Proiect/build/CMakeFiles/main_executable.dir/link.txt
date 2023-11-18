@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/main_executable.dir/main.cpp.o -o main_executable  clasa1/libTelefon.a 
+/usr/bin/c++ CMakeFiles/main_executable.dir/main.cpp.o -o main_executable  libs/Tablet/libtablet.a libs/Smartphone/libsmartphone.a libs/AndroidDevice/libandroidDevice.a libs/Smartphone/libsmartphone.a 

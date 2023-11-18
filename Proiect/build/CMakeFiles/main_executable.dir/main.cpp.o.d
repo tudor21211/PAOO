@@ -148,7 +148,6 @@ CMakeFiles/main_executable.dir/main.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/tudor21/Desktop/git/PAOO/Proiect/src/clasa1/Telefon.hpp \
- /home/tudor21/Desktop/git/PAOO/Proiect/src/clasa1/Device.hpp \
- /home/tudor21/Desktop/git/PAOO/Proiect/src/clasa1/DeviceInterface.hpp \
- /home/tudor21/Desktop/git/PAOO/Proiect/src/clasa1/Device.hpp
+ /home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Device/Device.hpp \
+ /home/tudor21/Desktop/git/PAOO/Proiect/src/libs/AndroidDevice/AndroidDevice.hpp \
+ /home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Smartphone/Smartphone.hpp

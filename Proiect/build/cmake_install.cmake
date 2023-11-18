@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/tudor21/Desktop/git/PAOO/Proiect/build/clasa1/cmake_install.cmake")
+  include("/home/tudor21/Desktop/git/PAOO/Proiect/build/libs/cmake_install.cmake")
 
 endif()
 

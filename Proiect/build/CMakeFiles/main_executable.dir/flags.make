@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/tudor21/Desktop/git/PAOO/Proiect/src/clasa1
+CXX_INCLUDES = -I/home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Device -I/home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Tablet -I/home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Smartphone -I/home/tudor21/Desktop/git/PAOO/Proiect/src/libs/AndroidDevice
 
 CXX_FLAGS = -std=gnu++11
 

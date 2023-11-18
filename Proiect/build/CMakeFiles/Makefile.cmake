@@ -11,7 +11,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.24.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.24.3/CMakeSystem.cmake"
   "/home/tudor21/Desktop/git/PAOO/Proiect/src/CMakeLists.txt"
-  "/home/tudor21/Desktop/git/PAOO/Proiect/src/clasa1/CMakeLists.txt"
+  "/home/tudor21/Desktop/git/PAOO/Proiect/src/libs/AndroidDevice/CMakeLists.txt"
+  "/home/tudor21/Desktop/git/PAOO/Proiect/src/libs/CMakeLists.txt"
+  "/home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Device/CMakeLists.txt"
+  "/home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Smartphone/CMakeLists.txt"
+  "/home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Tablet/CMakeLists.txt"
   "/usr/share/cmake-3.24/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.24/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake"
@@ -40,11 +44,17 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "clasa1/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "libs/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "libs/Device/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "libs/AndroidDevice/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "libs/Tablet/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "libs/Smartphone/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/main_executable.dir/DependInfo.cmake"
-  "clasa1/CMakeFiles/Telefon.dir/DependInfo.cmake"
+  "libs/AndroidDevice/CMakeFiles/androidDevice.dir/DependInfo.cmake"
+  "libs/Tablet/CMakeFiles/tablet.dir/DependInfo.cmake"
+  "libs/Smartphone/CMakeFiles/smartphone.dir/DependInfo.cmake"
   )

@@ -92,7 +92,10 @@ main_executable_EXTERNAL_OBJECTS =
 
 main_executable: CMakeFiles/main_executable.dir/main.cpp.o
 main_executable: CMakeFiles/main_executable.dir/build.make
-main_executable: clasa1/libTelefon.a
+main_executable: libs/Tablet/libtablet.a
+main_executable: libs/Smartphone/libsmartphone.a
+main_executable: libs/AndroidDevice/libandroidDevice.a
+main_executable: libs/Smartphone/libsmartphone.a
 main_executable: CMakeFiles/main_executable.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable main_executable"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main_executable.dir/link.txt --verbose=$(VERBOSE)
