@@ -8,6 +8,21 @@
 
 using namespace device;
 
+
+
+Smartphone::Smartphone(){
+    std::cout<<"Default constructor\n";
+    this->name = new char[1];
+    this->name[0] = '\0';
+    this->color = new char[1];
+    this->color[0] = '\0';
+    this->size = 0;
+    this->brand = new char[1];
+    this->brand[0] = '\0';
+    this->model = new char[1];
+    this->model[0] = '\0';
+}
+
 Smartphone::Smartphone(const char *name, const char *color, float size, const char *brand, const char *model) {
     
     this->name = new char[strlen(name) + 1];
@@ -47,11 +62,11 @@ Smartphone::Smartphone(Smartphone &&otherSmartphone){
     this->size = otherSmartphone.size;
     this->brand = otherSmartphone.brand;
     this->model = otherSmartphone.model;
-    otherSmartphone.brand = nullptr;
-    otherSmartphone.model = nullptr;
     otherSmartphone.name = nullptr;
     otherSmartphone.color = nullptr;
     otherSmartphone.size = 0;
+    otherSmartphone.brand = nullptr;
+    otherSmartphone.model = nullptr;
 }
 
 
@@ -87,6 +102,10 @@ Smartphone& Smartphone::operator=(Smartphone &otherSmartphone){
 
 Smartphone& Smartphone::operator=(Smartphone &&smartphone) {
     if (this != &smartphone) {
+        delete[] this->brand;
+        delete[] this->model;
+        delete[] this->name;
+        delete[] this->color;
         this->brand = smartphone.brand;
         this->model = smartphone.model;
         this->name = smartphone.name;
@@ -137,5 +156,7 @@ void Smartphone::getClassType() const {
 }
 
 void Smartphone::getAllInfo() const {
+    if (name!=nullptr)
     std::cout<<"Smartphone"<<" "<< this->name<<" "<< this->brand << " " <<this->color << " " << this->model<<std::endl;
+
 }

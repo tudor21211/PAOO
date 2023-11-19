@@ -9,13 +9,6 @@ namespace device {
 
     class Device {
 
-        protected:
-
-            char *name;
-            char *color;
-            float size;
-
-
         public:
 
             virtual char* getColor() const = 0;
@@ -24,7 +17,7 @@ namespace device {
             virtual float getSize() const=0;
             virtual void setColor(const char *newColor) =0;
             virtual void setSize(float newSize) =0;
-             virtual void getAllInfo() const =0; 
+            virtual void getAllInfo() const =0; 
             
     };
 

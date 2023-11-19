@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/tudor21/Desktop/git/PAOO/Proiect/src/libs/AndroidDevice -I/home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Smartphone -I/home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Device
 
-CXX_FLAGS = -std=gnu++11
+CXX_FLAGS =  -O0 -O0 -std=gnu++11
 
