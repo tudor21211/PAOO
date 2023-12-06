@@ -1,5 +1,5 @@
 libs/CMakeFiles/Items.dir/Item.cpp.o: \
- /home/tudor21/Desktop/Proiect3/src/libs/Item.cpp \
+ /home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Item.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -196,7 +196,8 @@ libs/CMakeFiles/Items.dir/Item.cpp.o: \
  /usr/include/c++/13/bits/ranges_algobase.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h /usr/include/string.h \
- /usr/include/strings.h /home/tudor21/Desktop/Proiect3/src/libs/Item.hpp \
+ /usr/include/strings.h \
+ /home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Item.hpp \
  /usr/include/c++/13/thread /usr/include/c++/13/stop_token \
  /usr/include/c++/13/atomic /usr/include/c++/13/bits/std_thread.h \
  /usr/include/c++/13/semaphore /usr/include/c++/13/bits/semaphore_base.h \

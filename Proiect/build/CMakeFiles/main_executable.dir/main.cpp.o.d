@@ -1,6 +1,7 @@
 CMakeFiles/main_executable.dir/main.cpp.o: \
- /home/tudor21/Desktop/Proiect3/src/main.cpp /usr/include/stdc-predef.h \
- /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
+ /home/tudor21/Desktop/git/PAOO/Proiect/src/main.cpp \
+ /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
+ /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -190,7 +191,7 @@ CMakeFiles/main_executable.dir/main.cpp.o: \
  /usr/include/c++/13/bits/this_thread_sleep.h \
  /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/semaphore.h \
  /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /home/tudor21/Desktop/Proiect3/src/libs/Item.cpp \
+ /home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Item.cpp \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/stl_tempbuf.h \
  /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
@@ -205,8 +206,9 @@ CMakeFiles/main_executable.dir/main.cpp.o: \
  /usr/include/c++/13/bits/ranges_algobase.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h /usr/include/string.h \
- /usr/include/strings.h /home/tudor21/Desktop/Proiect3/src/libs/Item.hpp \
- /home/tudor21/Desktop/Proiect3/src/libs/Inventory.hpp \
+ /usr/include/strings.h \
+ /home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Item.hpp \
+ /home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Inventory.hpp \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc /usr/include/c++/13/mutex \

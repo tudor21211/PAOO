@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tudor21/Desktop/Proiect3/src
+CMAKE_SOURCE_DIR = /home/tudor21/Desktop/git/PAOO/Proiect/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tudor21/Desktop/Proiect3/build
+CMAKE_BINARY_DIR = /home/tudor21/Desktop/git/PAOO/Proiect/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -98,14 +98,14 @@ libs/clean: libs/CMakeFiles/Items.dir/clean
 CMakeFiles/main_executable.dir/all: libs/CMakeFiles/Items.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_executable.dir/build.make CMakeFiles/main_executable.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_executable.dir/build.make CMakeFiles/main_executable.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tudor21/Desktop/Proiect3/build/CMakeFiles --progress-num=4,5 "Built target main_executable"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles --progress-num=4,5 "Built target main_executable"
 .PHONY : CMakeFiles/main_executable.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/main_executable.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor21/Desktop/Proiect3/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main_executable.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor21/Desktop/Proiect3/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles 0
 .PHONY : CMakeFiles/main_executable.dir/rule
 
 # Convenience name for target.
@@ -124,14 +124,14 @@ CMakeFiles/main_executable.dir/clean:
 libs/CMakeFiles/Items.dir/all:
 	$(MAKE) $(MAKESILENT) -f libs/CMakeFiles/Items.dir/build.make libs/CMakeFiles/Items.dir/depend
 	$(MAKE) $(MAKESILENT) -f libs/CMakeFiles/Items.dir/build.make libs/CMakeFiles/Items.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tudor21/Desktop/Proiect3/build/CMakeFiles --progress-num=1,2,3 "Built target Items"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles --progress-num=1,2,3 "Built target Items"
 .PHONY : libs/CMakeFiles/Items.dir/all
 
 # Build rule for subdir invocation for target.
 libs/CMakeFiles/Items.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor21/Desktop/Proiect3/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/CMakeFiles/Items.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor21/Desktop/Proiect3/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles 0
 .PHONY : libs/CMakeFiles/Items.dir/rule
 
 # Convenience name for target.

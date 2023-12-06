@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tudor21/Desktop/Proiect3/src
+CMAKE_SOURCE_DIR = /home/tudor21/Desktop/git/PAOO/Proiect/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tudor21/Desktop/Proiect3/build
+CMAKE_BINARY_DIR = /home/tudor21/Desktop/git/PAOO/Proiect/build
 
 # Include any dependencies generated for this target.
 include libs/CMakeFiles/Items.dir/depend.make
@@ -70,32 +70,32 @@ include libs/CMakeFiles/Items.dir/progress.make
 include libs/CMakeFiles/Items.dir/flags.make
 
 libs/CMakeFiles/Items.dir/Item.cpp.o: libs/CMakeFiles/Items.dir/flags.make
-libs/CMakeFiles/Items.dir/Item.cpp.o: /home/tudor21/Desktop/Proiect3/src/libs/Item.cpp
+libs/CMakeFiles/Items.dir/Item.cpp.o: /home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Item.cpp
 libs/CMakeFiles/Items.dir/Item.cpp.o: libs/CMakeFiles/Items.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tudor21/Desktop/Proiect3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/CMakeFiles/Items.dir/Item.cpp.o"
-	cd /home/tudor21/Desktop/Proiect3/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/Items.dir/Item.cpp.o -MF CMakeFiles/Items.dir/Item.cpp.o.d -o CMakeFiles/Items.dir/Item.cpp.o -c /home/tudor21/Desktop/Proiect3/src/libs/Item.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object libs/CMakeFiles/Items.dir/Item.cpp.o"
+	cd /home/tudor21/Desktop/git/PAOO/Proiect/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/Items.dir/Item.cpp.o -MF CMakeFiles/Items.dir/Item.cpp.o.d -o CMakeFiles/Items.dir/Item.cpp.o -c /home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Item.cpp
 
 libs/CMakeFiles/Items.dir/Item.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Items.dir/Item.cpp.i"
-	cd /home/tudor21/Desktop/Proiect3/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tudor21/Desktop/Proiect3/src/libs/Item.cpp > CMakeFiles/Items.dir/Item.cpp.i
+	cd /home/tudor21/Desktop/git/PAOO/Proiect/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Item.cpp > CMakeFiles/Items.dir/Item.cpp.i
 
 libs/CMakeFiles/Items.dir/Item.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Items.dir/Item.cpp.s"
-	cd /home/tudor21/Desktop/Proiect3/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tudor21/Desktop/Proiect3/src/libs/Item.cpp -o CMakeFiles/Items.dir/Item.cpp.s
+	cd /home/tudor21/Desktop/git/PAOO/Proiect/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Item.cpp -o CMakeFiles/Items.dir/Item.cpp.s
 
 libs/CMakeFiles/Items.dir/Inventory.cpp.o: libs/CMakeFiles/Items.dir/flags.make
-libs/CMakeFiles/Items.dir/Inventory.cpp.o: /home/tudor21/Desktop/Proiect3/src/libs/Inventory.cpp
+libs/CMakeFiles/Items.dir/Inventory.cpp.o: /home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Inventory.cpp
 libs/CMakeFiles/Items.dir/Inventory.cpp.o: libs/CMakeFiles/Items.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tudor21/Desktop/Proiect3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libs/CMakeFiles/Items.dir/Inventory.cpp.o"
-	cd /home/tudor21/Desktop/Proiect3/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/Items.dir/Inventory.cpp.o -MF CMakeFiles/Items.dir/Inventory.cpp.o.d -o CMakeFiles/Items.dir/Inventory.cpp.o -c /home/tudor21/Desktop/Proiect3/src/libs/Inventory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object libs/CMakeFiles/Items.dir/Inventory.cpp.o"
+	cd /home/tudor21/Desktop/git/PAOO/Proiect/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT libs/CMakeFiles/Items.dir/Inventory.cpp.o -MF CMakeFiles/Items.dir/Inventory.cpp.o.d -o CMakeFiles/Items.dir/Inventory.cpp.o -c /home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Inventory.cpp
 
 libs/CMakeFiles/Items.dir/Inventory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Items.dir/Inventory.cpp.i"
-	cd /home/tudor21/Desktop/Proiect3/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tudor21/Desktop/Proiect3/src/libs/Inventory.cpp > CMakeFiles/Items.dir/Inventory.cpp.i
+	cd /home/tudor21/Desktop/git/PAOO/Proiect/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Inventory.cpp > CMakeFiles/Items.dir/Inventory.cpp.i
 
 libs/CMakeFiles/Items.dir/Inventory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Items.dir/Inventory.cpp.s"
-	cd /home/tudor21/Desktop/Proiect3/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tudor21/Desktop/Proiect3/src/libs/Inventory.cpp -o CMakeFiles/Items.dir/Inventory.cpp.s
+	cd /home/tudor21/Desktop/git/PAOO/Proiect/build/libs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Inventory.cpp -o CMakeFiles/Items.dir/Inventory.cpp.s
 
 # Object files for target Items
 Items_OBJECTS = \
@@ -109,19 +109,19 @@ libs/libItems.a: libs/CMakeFiles/Items.dir/Item.cpp.o
 libs/libItems.a: libs/CMakeFiles/Items.dir/Inventory.cpp.o
 libs/libItems.a: libs/CMakeFiles/Items.dir/build.make
 libs/libItems.a: libs/CMakeFiles/Items.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tudor21/Desktop/Proiect3/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libItems.a"
-	cd /home/tudor21/Desktop/Proiect3/build/libs && $(CMAKE_COMMAND) -P CMakeFiles/Items.dir/cmake_clean_target.cmake
-	cd /home/tudor21/Desktop/Proiect3/build/libs && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Items.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libItems.a"
+	cd /home/tudor21/Desktop/git/PAOO/Proiect/build/libs && $(CMAKE_COMMAND) -P CMakeFiles/Items.dir/cmake_clean_target.cmake
+	cd /home/tudor21/Desktop/git/PAOO/Proiect/build/libs && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Items.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 libs/CMakeFiles/Items.dir/build: libs/libItems.a
 .PHONY : libs/CMakeFiles/Items.dir/build
 
 libs/CMakeFiles/Items.dir/clean:
-	cd /home/tudor21/Desktop/Proiect3/build/libs && $(CMAKE_COMMAND) -P CMakeFiles/Items.dir/cmake_clean.cmake
+	cd /home/tudor21/Desktop/git/PAOO/Proiect/build/libs && $(CMAKE_COMMAND) -P CMakeFiles/Items.dir/cmake_clean.cmake
 .PHONY : libs/CMakeFiles/Items.dir/clean
 
 libs/CMakeFiles/Items.dir/depend:
-	cd /home/tudor21/Desktop/Proiect3/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tudor21/Desktop/Proiect3/src /home/tudor21/Desktop/Proiect3/src/libs /home/tudor21/Desktop/Proiect3/build /home/tudor21/Desktop/Proiect3/build/libs /home/tudor21/Desktop/Proiect3/build/libs/CMakeFiles/Items.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/tudor21/Desktop/git/PAOO/Proiect/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/tudor21/Desktop/git/PAOO/Proiect/src /home/tudor21/Desktop/git/PAOO/Proiect/src/libs /home/tudor21/Desktop/git/PAOO/Proiect/build /home/tudor21/Desktop/git/PAOO/Proiect/build/libs /home/tudor21/Desktop/git/PAOO/Proiect/build/libs/CMakeFiles/Items.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : libs/CMakeFiles/Items.dir/depend
 

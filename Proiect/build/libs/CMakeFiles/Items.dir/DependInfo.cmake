@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/tudor21/Desktop/Proiect3/src/libs/Inventory.cpp" "libs/CMakeFiles/Items.dir/Inventory.cpp.o" "gcc" "libs/CMakeFiles/Items.dir/Inventory.cpp.o.d"
-  "/home/tudor21/Desktop/Proiect3/src/libs/Item.cpp" "libs/CMakeFiles/Items.dir/Item.cpp.o" "gcc" "libs/CMakeFiles/Items.dir/Item.cpp.o.d"
+  "/home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Inventory.cpp" "libs/CMakeFiles/Items.dir/Inventory.cpp.o" "gcc" "libs/CMakeFiles/Items.dir/Inventory.cpp.o.d"
+  "/home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Item.cpp" "libs/CMakeFiles/Items.dir/Item.cpp.o" "gcc" "libs/CMakeFiles/Items.dir/Item.cpp.o.d"
   )
 
 # Targets to which this target links.

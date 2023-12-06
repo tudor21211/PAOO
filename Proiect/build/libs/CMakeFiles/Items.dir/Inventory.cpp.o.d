@@ -1,5 +1,5 @@
 libs/CMakeFiles/Items.dir/Inventory.cpp.o: \
- /home/tudor21/Desktop/Proiect3/src/libs/Inventory.cpp \
+ /home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Inventory.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -217,7 +217,7 @@ libs/CMakeFiles/Items.dir/Inventory.cpp.o: \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/bits/ranges_uninitialized.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
- /home/tudor21/Desktop/Proiect3/src/libs/Inventory.hpp \
+ /home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Inventory.hpp \
  /usr/include/string.h /usr/include/strings.h /usr/include/c++/13/barrier \
  /usr/include/c++/13/array \
- /home/tudor21/Desktop/Proiect3/src/libs/Item.hpp
+ /home/tudor21/Desktop/git/PAOO/Proiect/src/libs/Item.hpp

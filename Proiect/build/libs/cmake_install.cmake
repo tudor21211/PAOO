@@ -1,4 +1,4 @@
-# Install script for directory: /home/tudor21/Desktop/Proiect3/src/libs
+# Install script for directory: /home/tudor21/Desktop/git/PAOO/Proiect/src/libs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
