@@ -6,7 +6,7 @@
 
 
 int main() {
-    /*const int numEmployees = 3;
+    const int numEmployees = 3;
     Inventory warehouse{std::vector<std::shared_ptr<Item>>()};
 
 
@@ -49,19 +49,31 @@ int main() {
     t1.join();
     t2.join();
     std::cout<<item.getQuantity()<<std::endl;
-    */
     
-    std::shared_ptr<Item> item;
-    {
-        std::shared_ptr<Item> item1 = std::make_shared<Item>("Item", 10);
-        item = item1;
-        std::cout << item1->getQuantity() << std::endl;
+    
+    std::shared_ptr<Item> item1 = std::make_shared<Item>("A",1);
+    std::shared_ptr<Item> item2 = std::make_shared<Item>("B",1);
+    
+    std::weak_ptr<Item> observer = item2;
+
+    std::cout<<"Processing item 1...\n";
+
+    srand (time(NULL));
+    //simulating different scenarios for item2 already processed vs not processed
+    int random = rand()%100;
+    std::cout<<random<<std::endl;
+    if(random % 2 == 0) item2.reset();
+
+    if(!observer.expired()) {
+        std::cout<<"Processing item 2...\n";
+        item2.reset();
 
     }
-
-    std::cout<<item.use_count()<<std::endl;
-
+    else {
+        std::cout<<"Item 2 already processed, leaving...\n";
+    }
     
     return 0;
 
 }
+
