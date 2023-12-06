@@ -1,6 +1,0 @@
-/home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles/main_executable.dir
-/home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles/edit_cache.dir
-/home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles/rebuild_cache.dir
-/home/tudor21/Desktop/git/PAOO/Proiect/build/libs/CMakeFiles/Items.dir
-/home/tudor21/Desktop/git/PAOO/Proiect/build/libs/CMakeFiles/edit_cache.dir
-/home/tudor21/Desktop/git/PAOO/Proiect/build/libs/CMakeFiles/rebuild_cache.dir
