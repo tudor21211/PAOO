@@ -1,4 +1,4 @@
-# Install script for directory: /home/tudor21/Desktop/git/PAOO/Proiect/src/libs
+# Install script for directory: /home/tudor21/Desktop/Proiect3/src/libs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,14 +40,5 @@ endif()
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/home/tudor21/Desktop/git/PAOO/Proiect/build/libs/Device/cmake_install.cmake")
-  include("/home/tudor21/Desktop/git/PAOO/Proiect/build/libs/AndroidDevice/cmake_install.cmake")
-  include("/home/tudor21/Desktop/git/PAOO/Proiect/build/libs/Tablet/cmake_install.cmake")
-  include("/home/tudor21/Desktop/git/PAOO/Proiect/build/libs/Smartphone/cmake_install.cmake")
-
 endif()
 

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libItems.a CMakeFiles/Items.dir/Item.cpp.o CMakeFiles/Items.dir/Inventory.cpp.o
+/usr/bin/ranlib libItems.a

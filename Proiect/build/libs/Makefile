@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tudor21/Desktop/git/PAOO/Proiect/src
+CMAKE_SOURCE_DIR = /home/tudor21/Desktop/Proiect3/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tudor21/Desktop/git/PAOO/Proiect/build
+CMAKE_BINARY_DIR = /home/tudor21/Desktop/Proiect3/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/tudor21/Desktop/git/PAOO/Proiect/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles /home/tudor21/Desktop/git/PAOO/Proiect/build/libs//CMakeFiles/progress.marks
-	cd /home/tudor21/Desktop/git/PAOO/Proiect/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles 0
+	cd /home/tudor21/Desktop/Proiect3/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/tudor21/Desktop/Proiect3/build/CMakeFiles /home/tudor21/Desktop/Proiect3/build/libs//CMakeFiles/progress.marks
+	cd /home/tudor21/Desktop/Proiect3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor21/Desktop/Proiect3/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/tudor21/Desktop/git/PAOO/Proiect/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/clean
+	cd /home/tudor21/Desktop/Proiect3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,18 +103,80 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/tudor21/Desktop/git/PAOO/Proiect/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/preinstall
+	cd /home/tudor21/Desktop/Proiect3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/tudor21/Desktop/git/PAOO/Proiect/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/preinstall
+	cd /home/tudor21/Desktop/Proiect3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/tudor21/Desktop/git/PAOO/Proiect/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/tudor21/Desktop/Proiect3/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+# Convenience name for target.
+libs/CMakeFiles/Items.dir/rule:
+	cd /home/tudor21/Desktop/Proiect3/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/CMakeFiles/Items.dir/rule
+.PHONY : libs/CMakeFiles/Items.dir/rule
+
+# Convenience name for target.
+Items: libs/CMakeFiles/Items.dir/rule
+.PHONY : Items
+
+# fast build rule for target.
+Items/fast:
+	cd /home/tudor21/Desktop/Proiect3/build && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/Items.dir/build.make libs/CMakeFiles/Items.dir/build
+.PHONY : Items/fast
+
+Inventory.o: Inventory.cpp.o
+.PHONY : Inventory.o
+
+# target to build an object file
+Inventory.cpp.o:
+	cd /home/tudor21/Desktop/Proiect3/build && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/Items.dir/build.make libs/CMakeFiles/Items.dir/Inventory.cpp.o
+.PHONY : Inventory.cpp.o
+
+Inventory.i: Inventory.cpp.i
+.PHONY : Inventory.i
+
+# target to preprocess a source file
+Inventory.cpp.i:
+	cd /home/tudor21/Desktop/Proiect3/build && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/Items.dir/build.make libs/CMakeFiles/Items.dir/Inventory.cpp.i
+.PHONY : Inventory.cpp.i
+
+Inventory.s: Inventory.cpp.s
+.PHONY : Inventory.s
+
+# target to generate assembly for a file
+Inventory.cpp.s:
+	cd /home/tudor21/Desktop/Proiect3/build && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/Items.dir/build.make libs/CMakeFiles/Items.dir/Inventory.cpp.s
+.PHONY : Inventory.cpp.s
+
+Item.o: Item.cpp.o
+.PHONY : Item.o
+
+# target to build an object file
+Item.cpp.o:
+	cd /home/tudor21/Desktop/Proiect3/build && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/Items.dir/build.make libs/CMakeFiles/Items.dir/Item.cpp.o
+.PHONY : Item.cpp.o
+
+Item.i: Item.cpp.i
+.PHONY : Item.i
+
+# target to preprocess a source file
+Item.cpp.i:
+	cd /home/tudor21/Desktop/Proiect3/build && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/Items.dir/build.make libs/CMakeFiles/Items.dir/Item.cpp.i
+.PHONY : Item.cpp.i
+
+Item.s: Item.cpp.s
+.PHONY : Item.s
+
+# target to generate assembly for a file
+Item.cpp.s:
+	cd /home/tudor21/Desktop/Proiect3/build && $(MAKE) $(MAKESILENT) -f libs/CMakeFiles/Items.dir/build.make libs/CMakeFiles/Items.dir/Item.cpp.s
+.PHONY : Item.cpp.s
 
 # Help Target
 help:
@@ -124,6 +186,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Items"
+	@echo "... Inventory.o"
+	@echo "... Inventory.i"
+	@echo "... Inventory.s"
+	@echo "... Item.o"
+	@echo "... Item.i"
+	@echo "... Item.s"
 .PHONY : help
 
 
@@ -135,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/tudor21/Desktop/git/PAOO/Proiect/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/tudor21/Desktop/Proiect3/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,2 +1,0 @@
-/usr/bin/ar qc libsmartphone.a CMakeFiles/smartphone.dir/Smartphone.cpp.o
-/usr/bin/ranlib libsmartphone.a

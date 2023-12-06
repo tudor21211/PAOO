@@ -1,48 +1,67 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include<iostream>
-
-#include "Device.hpp"
-#include "AndroidDevice.hpp"
-
-
-using namespace device;
+#include <iostream>
+#include <thread>
+#include "Item.cpp"
+#include "Inventory.hpp"
 
 
 
-int main () {
+int main() {
+    /*const int numEmployees = 3;
+    Inventory warehouse{std::vector<std::shared_ptr<Item>>()};
 
+
+    auto addFunction = [&](const std::shared_ptr<Item>& item) {
+        warehouse.addItem(item);
+    };
+
+    auto removeFunction = [&](const char* itemName) {
+        warehouse.removeItem(itemName);
+    };
+
+    std::vector<std::thread> threads;
+    std::time_t start = std::time(nullptr);
+    for (int i = 0; i < numEmployees; ++i) {
+        threads.emplace_back(addFunction, std::make_shared<Item>("Item", 10));
+    }
+
+    threads.emplace_back(removeFunction, "Item");
+
+    for (auto& thread : threads) {
+        thread.join();
+    }
+    
+
+    std::cout<<"Time taken: " << std::time(nullptr) - start << std::endl;
+    warehouse.displayInventory();
+
+    Item item{"Item", 10};
+    std::cout<<item.getQuantity()<<std::endl;
+
+    std::thread t1([&]() -> void{
+        item.incrementQuantity();
+        //in increment daca  nu adaugam semaforul, threadurile se vor suprapune 
+        //si se vor afisa valori gresite deoarece nu se va face lock pe quantity
+    });
+    std::thread t2([&]() -> void{
+        item.incrementQuantity();
+    });
+    
+    t1.join();
+    t2.join();
+    std::cout<<item.getQuantity()<<std::endl;
+    */
+    
+    std::shared_ptr<Item> item;
+    {
+        std::shared_ptr<Item> item1 = std::make_shared<Item>("Item", 10);
+        item = item1;
+        std::cout << item1->getQuantity() << std::endl;
+
+    }
+
+    std::cout<<item.use_count()<<std::endl;
 
     
-   Smartphone smartphone1 = std::move(Smartphone("Smartphone1", "White", 6.5, "Hwawei", "Halo 2"));
-
-  
-   smartphone1.getAllInfo();
-
-
-   Smartphone smartphone2 = std::move(smartphone1);
-
-
-   smartphone2.getAllInfo();
-   smartphone1.getAllInfo();
-    
-   Smartphone *myPhone = new AndroidDevice("Smartphone3", "Black", 5.5, "Samsung", "Galaxy S10", "Android 10");
-
-   myPhone->getAllInfo();
-
-
-   //testing copy ellision 
-   Smartphone smartphone3(Smartphone("Smartphone1", "White", 6.5, "Hwawei", "Halo 2"));
-   //copy elission is used here to avoid copying the object
-   smartphone3.getAllInfo();
-
-   smartphone3.setColor("Red");
-   smartphone2 = std::move(smartphone3);
-   smartphone2.getAllInfo();
-
-   smartphone2.getClassType();
-   std::cout<<smartphone2.getSize()<<std::endl;
-
+    return 0;
 
 }

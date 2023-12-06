@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tudor21/Desktop/git/PAOO/Proiect/src
+CMAKE_SOURCE_DIR = /home/tudor21/Desktop/Proiect3/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tudor21/Desktop/git/PAOO/Proiect/build
+CMAKE_BINARY_DIR = /home/tudor21/Desktop/Proiect3/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles /home/tudor21/Desktop/git/PAOO/Proiect/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor21/Desktop/Proiect3/build/CMakeFiles /home/tudor21/Desktop/Proiect3/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor21/Desktop/Proiect3/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -130,43 +130,17 @@ main_executable/fast:
 .PHONY : main_executable/fast
 
 #=============================================================================
-# Target rules for targets named androidDevice
+# Target rules for targets named Items
 
 # Build rule for target.
-androidDevice: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 androidDevice
-.PHONY : androidDevice
+Items: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Items
+.PHONY : Items
 
 # fast build rule for target.
-androidDevice/fast:
-	$(MAKE) $(MAKESILENT) -f libs/AndroidDevice/CMakeFiles/androidDevice.dir/build.make libs/AndroidDevice/CMakeFiles/androidDevice.dir/build
-.PHONY : androidDevice/fast
-
-#=============================================================================
-# Target rules for targets named tablet
-
-# Build rule for target.
-tablet: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tablet
-.PHONY : tablet
-
-# fast build rule for target.
-tablet/fast:
-	$(MAKE) $(MAKESILENT) -f libs/Tablet/CMakeFiles/tablet.dir/build.make libs/Tablet/CMakeFiles/tablet.dir/build
-.PHONY : tablet/fast
-
-#=============================================================================
-# Target rules for targets named smartphone
-
-# Build rule for target.
-smartphone: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 smartphone
-.PHONY : smartphone
-
-# fast build rule for target.
-smartphone/fast:
-	$(MAKE) $(MAKESILENT) -f libs/Smartphone/CMakeFiles/smartphone.dir/build.make libs/Smartphone/CMakeFiles/smartphone.dir/build
-.PHONY : smartphone/fast
+Items/fast:
+	$(MAKE) $(MAKESILENT) -f libs/CMakeFiles/Items.dir/build.make libs/CMakeFiles/Items.dir/build
+.PHONY : Items/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -200,10 +174,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... androidDevice"
+	@echo "... Items"
 	@echo "... main_executable"
-	@echo "... smartphone"
-	@echo "... tablet"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

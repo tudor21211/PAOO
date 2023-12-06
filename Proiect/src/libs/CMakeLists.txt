@@ -1,15 +1,12 @@
-cmake_minimum_required(VERSION 3.12)
-Project(Telefon VERSION 1.0)
+cmake_minimum_required(VERSION 3.20)
 
-set(CMAKE_CXX_STANDARD 11)
+project(Item)
+
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O0")
-
-add_subdirectory(Device)
-add_subdirectory(AndroidDevice)
-add_subdirectory(Tablet)
-add_subdirectory(Smartphone)
 
 
+set(subproject_sources Item.cpp Item.hpp Inventory.cpp Inventory.hpp)
 
-
+add_library(Items ${subproject_sources})
+target_include_directories(Items PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

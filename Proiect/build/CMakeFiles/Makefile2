@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tudor21/Desktop/git/PAOO/Proiect/src
+CMAKE_SOURCE_DIR = /home/tudor21/Desktop/Proiect3/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tudor21/Desktop/git/PAOO/Proiect/build
+CMAKE_BINARY_DIR = /home/tudor21/Desktop/Proiect3/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -80,103 +80,32 @@ clean: libs/clean
 # Directory level rules for directory libs
 
 # Recursive "all" directory target.
-libs/all: libs/Device/all
-libs/all: libs/AndroidDevice/all
-libs/all: libs/Tablet/all
-libs/all: libs/Smartphone/all
+libs/all: libs/CMakeFiles/Items.dir/all
 .PHONY : libs/all
 
 # Recursive "preinstall" directory target.
-libs/preinstall: libs/Device/preinstall
-libs/preinstall: libs/AndroidDevice/preinstall
-libs/preinstall: libs/Tablet/preinstall
-libs/preinstall: libs/Smartphone/preinstall
+libs/preinstall:
 .PHONY : libs/preinstall
 
 # Recursive "clean" directory target.
-libs/clean: libs/Device/clean
-libs/clean: libs/AndroidDevice/clean
-libs/clean: libs/Tablet/clean
-libs/clean: libs/Smartphone/clean
+libs/clean: libs/CMakeFiles/Items.dir/clean
 .PHONY : libs/clean
-
-#=============================================================================
-# Directory level rules for directory libs/AndroidDevice
-
-# Recursive "all" directory target.
-libs/AndroidDevice/all: libs/AndroidDevice/CMakeFiles/androidDevice.dir/all
-.PHONY : libs/AndroidDevice/all
-
-# Recursive "preinstall" directory target.
-libs/AndroidDevice/preinstall:
-.PHONY : libs/AndroidDevice/preinstall
-
-# Recursive "clean" directory target.
-libs/AndroidDevice/clean: libs/AndroidDevice/CMakeFiles/androidDevice.dir/clean
-.PHONY : libs/AndroidDevice/clean
-
-#=============================================================================
-# Directory level rules for directory libs/Device
-
-# Recursive "all" directory target.
-libs/Device/all:
-.PHONY : libs/Device/all
-
-# Recursive "preinstall" directory target.
-libs/Device/preinstall:
-.PHONY : libs/Device/preinstall
-
-# Recursive "clean" directory target.
-libs/Device/clean:
-.PHONY : libs/Device/clean
-
-#=============================================================================
-# Directory level rules for directory libs/Smartphone
-
-# Recursive "all" directory target.
-libs/Smartphone/all: libs/Smartphone/CMakeFiles/smartphone.dir/all
-.PHONY : libs/Smartphone/all
-
-# Recursive "preinstall" directory target.
-libs/Smartphone/preinstall:
-.PHONY : libs/Smartphone/preinstall
-
-# Recursive "clean" directory target.
-libs/Smartphone/clean: libs/Smartphone/CMakeFiles/smartphone.dir/clean
-.PHONY : libs/Smartphone/clean
-
-#=============================================================================
-# Directory level rules for directory libs/Tablet
-
-# Recursive "all" directory target.
-libs/Tablet/all: libs/Tablet/CMakeFiles/tablet.dir/all
-.PHONY : libs/Tablet/all
-
-# Recursive "preinstall" directory target.
-libs/Tablet/preinstall:
-.PHONY : libs/Tablet/preinstall
-
-# Recursive "clean" directory target.
-libs/Tablet/clean: libs/Tablet/CMakeFiles/tablet.dir/clean
-.PHONY : libs/Tablet/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/main_executable.dir
 
 # All Build rule for target.
-CMakeFiles/main_executable.dir/all: libs/AndroidDevice/CMakeFiles/androidDevice.dir/all
-CMakeFiles/main_executable.dir/all: libs/Tablet/CMakeFiles/tablet.dir/all
-CMakeFiles/main_executable.dir/all: libs/Smartphone/CMakeFiles/smartphone.dir/all
+CMakeFiles/main_executable.dir/all: libs/CMakeFiles/Items.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_executable.dir/build.make CMakeFiles/main_executable.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_executable.dir/build.make CMakeFiles/main_executable.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles --progress-num=3,4 "Built target main_executable"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tudor21/Desktop/Proiect3/build/CMakeFiles --progress-num=4,5 "Built target main_executable"
 .PHONY : CMakeFiles/main_executable.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/main_executable.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor21/Desktop/Proiect3/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main_executable.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor21/Desktop/Proiect3/build/CMakeFiles 0
 .PHONY : CMakeFiles/main_executable.dir/rule
 
 # Convenience name for target.
@@ -189,82 +118,30 @@ CMakeFiles/main_executable.dir/clean:
 .PHONY : CMakeFiles/main_executable.dir/clean
 
 #=============================================================================
-# Target rules for target libs/AndroidDevice/CMakeFiles/androidDevice.dir
+# Target rules for target libs/CMakeFiles/Items.dir
 
 # All Build rule for target.
-libs/AndroidDevice/CMakeFiles/androidDevice.dir/all: libs/Smartphone/CMakeFiles/smartphone.dir/all
-	$(MAKE) $(MAKESILENT) -f libs/AndroidDevice/CMakeFiles/androidDevice.dir/build.make libs/AndroidDevice/CMakeFiles/androidDevice.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/AndroidDevice/CMakeFiles/androidDevice.dir/build.make libs/AndroidDevice/CMakeFiles/androidDevice.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles --progress-num=1,2 "Built target androidDevice"
-.PHONY : libs/AndroidDevice/CMakeFiles/androidDevice.dir/all
+libs/CMakeFiles/Items.dir/all:
+	$(MAKE) $(MAKESILENT) -f libs/CMakeFiles/Items.dir/build.make libs/CMakeFiles/Items.dir/depend
+	$(MAKE) $(MAKESILENT) -f libs/CMakeFiles/Items.dir/build.make libs/CMakeFiles/Items.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tudor21/Desktop/Proiect3/build/CMakeFiles --progress-num=1,2,3 "Built target Items"
+.PHONY : libs/CMakeFiles/Items.dir/all
 
 # Build rule for subdir invocation for target.
-libs/AndroidDevice/CMakeFiles/androidDevice.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/AndroidDevice/CMakeFiles/androidDevice.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles 0
-.PHONY : libs/AndroidDevice/CMakeFiles/androidDevice.dir/rule
+libs/CMakeFiles/Items.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor21/Desktop/Proiect3/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/CMakeFiles/Items.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor21/Desktop/Proiect3/build/CMakeFiles 0
+.PHONY : libs/CMakeFiles/Items.dir/rule
 
 # Convenience name for target.
-androidDevice: libs/AndroidDevice/CMakeFiles/androidDevice.dir/rule
-.PHONY : androidDevice
+Items: libs/CMakeFiles/Items.dir/rule
+.PHONY : Items
 
 # clean rule for target.
-libs/AndroidDevice/CMakeFiles/androidDevice.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/AndroidDevice/CMakeFiles/androidDevice.dir/build.make libs/AndroidDevice/CMakeFiles/androidDevice.dir/clean
-.PHONY : libs/AndroidDevice/CMakeFiles/androidDevice.dir/clean
-
-#=============================================================================
-# Target rules for target libs/Tablet/CMakeFiles/tablet.dir
-
-# All Build rule for target.
-libs/Tablet/CMakeFiles/tablet.dir/all:
-	$(MAKE) $(MAKESILENT) -f libs/Tablet/CMakeFiles/tablet.dir/build.make libs/Tablet/CMakeFiles/tablet.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/Tablet/CMakeFiles/tablet.dir/build.make libs/Tablet/CMakeFiles/tablet.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles --progress-num=7,8 "Built target tablet"
-.PHONY : libs/Tablet/CMakeFiles/tablet.dir/all
-
-# Build rule for subdir invocation for target.
-libs/Tablet/CMakeFiles/tablet.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/Tablet/CMakeFiles/tablet.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles 0
-.PHONY : libs/Tablet/CMakeFiles/tablet.dir/rule
-
-# Convenience name for target.
-tablet: libs/Tablet/CMakeFiles/tablet.dir/rule
-.PHONY : tablet
-
-# clean rule for target.
-libs/Tablet/CMakeFiles/tablet.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/Tablet/CMakeFiles/tablet.dir/build.make libs/Tablet/CMakeFiles/tablet.dir/clean
-.PHONY : libs/Tablet/CMakeFiles/tablet.dir/clean
-
-#=============================================================================
-# Target rules for target libs/Smartphone/CMakeFiles/smartphone.dir
-
-# All Build rule for target.
-libs/Smartphone/CMakeFiles/smartphone.dir/all:
-	$(MAKE) $(MAKESILENT) -f libs/Smartphone/CMakeFiles/smartphone.dir/build.make libs/Smartphone/CMakeFiles/smartphone.dir/depend
-	$(MAKE) $(MAKESILENT) -f libs/Smartphone/CMakeFiles/smartphone.dir/build.make libs/Smartphone/CMakeFiles/smartphone.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles --progress-num=5,6 "Built target smartphone"
-.PHONY : libs/Smartphone/CMakeFiles/smartphone.dir/all
-
-# Build rule for subdir invocation for target.
-libs/Smartphone/CMakeFiles/smartphone.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libs/Smartphone/CMakeFiles/smartphone.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tudor21/Desktop/git/PAOO/Proiect/build/CMakeFiles 0
-.PHONY : libs/Smartphone/CMakeFiles/smartphone.dir/rule
-
-# Convenience name for target.
-smartphone: libs/Smartphone/CMakeFiles/smartphone.dir/rule
-.PHONY : smartphone
-
-# clean rule for target.
-libs/Smartphone/CMakeFiles/smartphone.dir/clean:
-	$(MAKE) $(MAKESILENT) -f libs/Smartphone/CMakeFiles/smartphone.dir/build.make libs/Smartphone/CMakeFiles/smartphone.dir/clean
-.PHONY : libs/Smartphone/CMakeFiles/smartphone.dir/clean
+libs/CMakeFiles/Items.dir/clean:
+	$(MAKE) $(MAKESILENT) -f libs/CMakeFiles/Items.dir/build.make libs/CMakeFiles/Items.dir/clean
+.PHONY : libs/CMakeFiles/Items.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

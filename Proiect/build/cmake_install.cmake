@@ -1,4 +1,4 @@
-# Install script for directory: /home/tudor21/Desktop/git/PAOO/Proiect/src
+# Install script for directory: /home/tudor21/Desktop/Proiect3/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,9 +43,8 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/home/tudor21/Desktop/git/PAOO/Proiect/build/libs/cmake_install.cmake")
-
+  # Include the install script for the subdirectory.
+  include("/home/tudor21/Desktop/Proiect3/build/libs/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -56,5 +55,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tudor21/Desktop/git/PAOO/Proiect/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/tudor21/Desktop/Proiect3/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

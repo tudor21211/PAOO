@@ -1,2 +1,0 @@
-/usr/bin/ar qc libandroidDevice.a CMakeFiles/androidDevice.dir/AndroidDevice.cpp.o
-/usr/bin/ranlib libandroidDevice.a
