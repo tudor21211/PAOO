@@ -8,11 +8,12 @@ Item::Item(const char* name, int quantity) {
     this->name = new char[strlen(name) + 1];
     strcpy(this->name, name);
     this->quantity = quantity;
-    sem_init(&this->quantitySemaphore, 0, 1);
+    sem_init(&this->quantitySemaphore, 0, 2);
 }
 
 Item::~Item(){
-
+    delete[] name;
+    sem_destroy(&quantitySemaphore);
 }
 
 void Item::display() const {
@@ -37,6 +38,7 @@ void Item::incrementQuantity() {
     for (int i = 0; i < 100000; ++i) {
     this->quantity++;
     }
+    std::cout<<"Thread "<<std::this_thread::get_id()<<" finished its work"<<std::endl;
     sem_post(&quantitySemaphore);  
 }
 

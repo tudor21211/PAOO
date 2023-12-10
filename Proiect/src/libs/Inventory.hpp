@@ -20,7 +20,7 @@ public:
     void addItem(std::shared_ptr<Item> item);
     void addItemByReferrence(std::shared_ptr<Item> item);
     void removeItem(const char* itemName);
-
+    void processItems(std::shared_ptr<Item> item1, std::shared_ptr<Item> item2);
     void displayInventory() const;
  
 private:

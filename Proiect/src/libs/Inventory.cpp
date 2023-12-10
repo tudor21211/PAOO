@@ -37,7 +37,7 @@ void Inventory::addItem(std::shared_ptr<Item> item){
         std::lock_guard<std::mutex> lock(mutex);
         items.push_back(item);
         //add delay to simulate work
-        std::this_thread::sleep_for(std::chrono::seconds(2));
+        std::this_thread::sleep_for(std::chrono::seconds(1));
         std::cout<<"In thread: " << std::this_thread::get_id() <<" adding an item"<< std::endl;
         mutex.unlock();
 
@@ -47,7 +47,7 @@ void Inventory::removeItem(const char* itemName) {
     std::lock_guard<std::mutex> lock(mutex);
     std::weak_ptr<Item> itemToRemove;
 
-    std::this_thread::sleep_for(std::chrono::seconds(2));
+    std::this_thread::sleep_for(std::chrono::seconds(1));
     std::cout<<"In thread: " << std::this_thread::get_id() <<" removing an item"<< std::endl;
     for (auto& item : items) { // Remove const qualifier from item
         if (strcmp(item->getItemName(), itemName) == 0) {
@@ -78,5 +78,27 @@ void Inventory::displayInventory() const {
             if(sharedPtr) {
                 sharedPtr->display();
             }
+        }
+    }
+
+
+void Inventory::processItems(std::shared_ptr<Item> item1, std::shared_ptr<Item> item2) {
+        std::weak_ptr<Item> observer = item2;
+        
+        std::cout << "Processing item 1...\n";
+        std::cout<<item2.use_count();
+        srand(time(NULL));
+        int random = rand() % 100;
+        std::cout << random << std::endl;
+        
+        if (random % 2 == 0) {
+            item2.reset();
+        }
+
+        if (!observer.expired()) {
+            std::cout << "Processing item 2...\n";
+            item2.reset();
+        } else {
+            std::cout << "Item 2 already processed, leaving...\n";
         }
     }

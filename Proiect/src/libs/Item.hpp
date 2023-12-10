@@ -23,5 +23,6 @@ private:
     char * name;  
     int quantity;
     sem_t quantitySemaphore;
+    std::mutex mutex;
 };
 #endif
